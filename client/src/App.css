@@ -1,0 +1,269 @@
+* {
+  box-sizing: border-box;
+}
+
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 14px;
+}
+
+
+#address_output {
+  font-size: 20px;
+  text-align: center;
+  color: green;
+}
+
+#product_output {
+  font-size: 20px;
+  text-align: center;
+  color: green;
+}
+
+/* table css */
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
+}
+
+td, th {
+  border: 2px solid black;
+  padding: 8px;
+  max-width: 20px;
+}
+
+tr {
+  background-color: #ffffff;
+}
+
+.hidden {
+  display: none;
+}
+
+td:hover .hidden {
+  background-color: #04AA6D;
+  display: block;
+  width: fit-content;
+  border: 2px solid black;
+  position: relative;
+  left: 0px;
+  top:  0px;
+  padding: 10px;
+}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+
+tr.selected {
+  background-color: #ffff00 !important;
+}
+
+/* main body css */
+
+html { height: 100%; }
+
+body {
+  font-family: Arial;
+  font-size: 24px;
+  background: #ffffff;
+}
+
+.body h2 {
+  text-align: center;
+}
+
+.body {
+  padding: 10px 20%;
+  margin: 10px;
+}
+
+.body ul, .body ol {
+  padding-left: 25px;
+}
+
+.body p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* header */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: #ffffff;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* footer */
+.footer {
+  border-top: 1px solid black;
+  padding: 20px;  
+}
+
+.footer img {
+  float: right;
+  width: auto;
+  height: 100px;
+  box-sizing:border-box;
+  margin-left: 10px;
+}
+
+/* menu css */
+ul.menu {
+  display: block;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+li.menuitem.info {
+  float:right;
+  border-right: none;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+
+}
+
+li.menuitem a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-right: 1px solid #bbb;
+}
+
+li.menuitem a:hover {
+  background-color: #111;
+}
+
+li.menuitem .active {
+  background-color: #4CAF50;
+}
+
+/* form related css */
+input[type=text], input[type=password], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=textarea], textarea {
+  width: 100%;
+  min-height: 80px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=button] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=button]:hover {
+  background-color: #45a049;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.col-25 label {
+  font-weight: bold;
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+.col-75 label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  font-style: italic;
+}
+
+#address_list {
+  width: 100%;
+  min-height: 150px;
+  background-color: #c0c0c0;
+  word-wrap: break-word; 
+  padding: 10px;
+  border: 2px solid black;
+}
+
+#product_information {
+  width: 100%;
+  min-height: 150px;
+  background-color: #c0c0c0;
+  word-wrap: break-word; 
+  padding: 10px;
+  border: 2px solid black;
+}
+
+figure.left {
+  float: left;
+  width: 49%;
+}
+
+figure.right {
+  float: right;
+  width: 49%;
+  margin-left: 20px;
+}
+
+figure img {
+  width: 100%;
+}
